@@ -8,4 +8,4 @@ class CourseList(ListView):
     template_name = "templates/course_list.html"
 
     def get(self, request):
-        return render(request, "templates/course_list.html")
+        return render(request, "course_list.html")
