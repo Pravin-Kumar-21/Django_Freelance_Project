@@ -9,3 +9,8 @@ class CourseList(ListView):
 
     def get(self, request):
         return render(request, "course_list.html")
+
+
+def course_list(request):
+    courses = models.Students.objects.all()
+    return render(request, "course_list.html", {"courses": courses})
